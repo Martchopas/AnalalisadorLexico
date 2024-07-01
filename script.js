@@ -170,3 +170,10 @@ function AtualizaTabela(j, uLetra, letras) {
   nLinha += '</tr>';
   return nLinha;
 }
+function limparLinguagem() {
+  ListaP = [];
+  document.getElementById("palavrasLinguagem").innerHTML = "";
+  document.getElementById("Tabela").innerHTML = "";
+  document.getElementById("transicoesPalavra").innerHTML = ""; 
+  
+}
