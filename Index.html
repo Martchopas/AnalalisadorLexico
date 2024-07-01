@@ -7,18 +7,16 @@
   <title>Analisador Léxico</title>
 </head>
 <body>
-
 <div class="container">
   <h2>Analisador Léxico</h2>
   <form>
     <div class="form-group">
       <label for="palavraInput">Palavra:</label>
       <input type="text" id="palavraInput" name="palavraInput">
-      <button type="button" onclick="adicionarPalavra()">Adicionar</button>
+      <button type="button" onclick="addPalavra()">Adicionar</button>
     </div>
   </form>
-  <div id="exibePalavras"></div>
-
+  <div id="palavrasLinguagem"></div>
   <h3>Tabela de Transições</h3>
   <table id="tabelaTransicoes">
     <thead>
@@ -30,16 +28,13 @@
 
     </tbody>
   </table>
-
   <h3 class="espaco-vertical">Validar Palavra</h3>
   <div class="form-group">
     <label for="VInput">Palavra:</label>
     <input type="text" id="VInput" name="VInput">
     <button type="button" onclick="Validar()">Validar</button>
   </div>
-
 </div>
-
 <script src="script.js"></script>
 </body>
 </html>
