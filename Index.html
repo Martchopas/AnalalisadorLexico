@@ -7,34 +7,34 @@
   <title>Analisador Léxico</title>
 </head>
 <body>
-<div class="container">
-  <h2>Analisador Léxico</h2>
-  <form>
+  <div class="container">
+    <h2>Analisador Léxico</h2>
+    <form>
+      <div class="form-group">
+        <label for="pInput">Palavra:</label>
+        <input type="text" id="pInput" name="pInput">
+        <button type="button" onclick="addPalavra()">Adicionar</button>
+      </div>
+    </form>
+    <div id="palavrasLinguagem"></div>
+    <h3>Tabela de Transições</h3>
+    <table id="tabelaTransicoes">
+      <thead>
+        <tr id="cabecalhoTabela">
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody id="Tabela"></tbody>
+    </table>
+    <h3 class="espaco-vertical">Validar Palavra</h3>
     <div class="form-group">
-      <label for="palavraInput">Palavra:</label>
-      <input type="text" id="palavraInput" name="palavraInput">
-      <button type="button" onclick="addPalavra()">Adicionar</button>
+      <label for="VInput">Palavra:</label>
+      <input type="text" id="VInput" name="VInput">
+      <button type="button" onclick="Validar()">Validar</button>
     </div>
-  </form>
-  <div id="palavrasLinguagem"></div>
-  <h3>Tabela de Transições</h3>
-  <table id="tabelaTransicoes">
-    <thead>
-      <tr id="cabecalhoTabela">
-        <th>Estado</th>
-      </tr>
-    </thead>
-    <tbody id="Tabela">
-
-    </tbody>
-  </table>
-  <h3 class="espaco-vertical">Validar Palavra</h3>
-  <div class="form-group">
-    <label for="VInput">Palavra:</label>
-    <input type="text" id="VInput" name="VInput">
-    <button type="button" onclick="Validar()">Validar</button>
+    <h3>Transições da Palavra Validada</h3>
+    <div id="transicoesPalavra"></div>
   </div>
-</div>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
